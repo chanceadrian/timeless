@@ -1,1 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shelf - Chance</title>
+    <link rel="stylesheet" href="case.css">
+    <script src="case.js"></script>
+    <meta name="theme-color" content="#FFFFFF">
+    <link rel="icon" href="Im/shelf/f-shelf.webp" type="image/webp">
+</head>
+
+<div class="contain">
+    <body>
+        <nav>
+            <a href="index.html">Home</a>
+            <a class="selected" href="shelf.html">Shelf</a>
+            <a href="about.html">About</a>
+            <a href="audio.html">Audio</a>
+        </nav>
+
+        <section class="key">
+            <div class="view">
+                <holder class="five">
+                    <holder class="first">
+                        <img class="iPhone" src="Im/shelf/color-1.webp">
+                    </holder>
+                    <holder class="second">
+                        <img class="iPhone" src="Im/shelf/color-2.webp">
+                    </holder>
+                    <holder class="third">
+                        <img class="iPhone" src="Im/shelf/color-3.webp">
+                    </holder>
+                    <holder class="fourth">
+                        <img class="iPhone" src="Im/shelf/color-4.webp">
+                    </holder>
+                    <holder class="fifth">
+                        <img class="iPhone" src="Im/shelf/color-5.webp">
+                    </holder>
+                    <h1>Shelf</h1>
+                </holder>
+            </div>
+            <div class="text view appear">
+                <h6>Sometimes we crave a more expressive, immersive place for reflection. One that’s easy to organize, easy to come back to. That’s Shelf — <br>a wonderful new place to keep things worth revisiting. </h6>
+                <a class="jump">
+                    Behind the Design
+                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.35547 5.76953C6.35547 5.88672 6.33203 5.99805 6.28516 6.10352C6.24219 6.20508 6.17188 6.30273 6.07422 6.39648L1.56836 10.8086C1.41602 10.957 1.23047 11.0312 1.01172 11.0312C0.871094 11.0312 0.740234 10.9961 0.619141 10.9258C0.498047 10.8555 0.400391 10.7617 0.326172 10.6445C0.255859 10.5273 0.220703 10.3945 0.220703 10.2461C0.220703 10.0312 0.302734 9.83984 0.466797 9.67188L4.48047 5.76953L0.466797 1.86719C0.302734 1.70312 0.220703 1.51172 0.220703 1.29297C0.220703 1.14844 0.255859 1.01758 0.326172 0.900391C0.400391 0.779297 0.498047 0.683594 0.619141 0.613281C0.740234 0.542969 0.871094 0.507812 1.01172 0.507812C1.23047 0.507812 1.41602 0.582031 1.56836 0.730469L6.07422 5.14258C6.16797 5.23633 6.23828 5.33398 6.28516 5.43555C6.33203 5.53711 6.35547 5.64844 6.35547 5.76953Z"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <section class="workflow">
+            <div class="eyebrow view">
+                <h7>Artifacts</h7>
+                <h3>Keep things<br>worth revisiting.</h3>
+            </div>
+            <div class="align view">
+                <div class="flow" id="Slider">
+                    <holder class="current">
+                        <img class="iPhone" src="Im/shelf/item-1.webp">
+                    </holder>
+                    <holder>
+                        <img class="iPhone" src="Im/shelf/item-2.webp">
+                    </holder>
+                    <holder>
+                        <img class="iPhone" src="Im/shelf/item-3.webp">
+                    </holder>
+                    <holder>
+                        <img class="iPhone" src="Im/shelf/item-4.webp">
+                    </holder>
+                    <holder>
+                        <img class="iPhone" src="Im/shelf/item-5.webp">
+                    </holder>
+                </div>
+                <div class="button-container">
+                    <button class="left" id="leftSlide">
+                        <svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.0410156 12.9932C0.0410156 13.2301 0.0865885 13.4489 0.177734 13.6494C0.26888 13.8499 0.405599 14.0413 0.587891 14.2236L11.2383 24.6416C11.5391 24.9515 11.9128 25.1064 12.3594 25.1064C12.651 25.1064 12.9199 25.0335 13.166 24.8877C13.4121 24.751 13.6081 24.5596 13.7539 24.3135C13.8906 24.0765 13.959 23.8122 13.959 23.5205C13.959 23.083 13.7949 22.6956 13.4668 22.3584L3.86914 12.9932L13.4668 3.62793C13.7949 3.29069 13.959 2.90788 13.959 2.47949C13.959 2.17871 13.8906 1.90983 13.7539 1.67285C13.6081 1.43587 13.4121 1.24902 13.166 1.1123C12.9199 0.966471 12.651 0.893555 12.3594 0.893555C11.9128 0.893555 11.5391 1.04395 11.2383 1.34473L0.587891 11.7627C0.405599 11.945 0.26888 12.1364 0.177734 12.3369C0.0865885 12.5374 0.0410156 12.7562 0.0410156 12.9932Z"/>
+                        </svg>  
+                    </button>
+                    <button class="right" id="rightSlide">
+                        <svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.959 12.9932C13.959 13.2301 13.9134 13.4489 13.8223 13.6494C13.7311 13.8499 13.5944 14.0413 13.4121 14.2236L2.76172 24.6416C2.46094 24.9515 2.08724 25.1064 1.64062 25.1064C1.34896 25.1064 1.08008 25.0335 0.833984 24.8877C0.587891 24.751 0.391927 24.5596 0.246094 24.3135C0.109375 24.0765 0.0410156 23.8122 0.0410156 23.5205C0.0410156 23.083 0.205078 22.6956 0.533203 22.3584L10.1309 12.9932L0.533203 3.62793C0.205078 3.29069 0.0410156 2.90788 0.0410156 2.47949C0.0410156 2.17871 0.109375 1.90983 0.246094 1.67285C0.391927 1.43587 0.587891 1.24902 0.833984 1.1123C1.08008 0.966471 1.34896 0.893555 1.64062 0.893555C2.08724 0.893555 2.46094 1.04395 2.76172 1.34473L13.4121 11.7627C13.5944 11.945 13.7311 12.1364 13.8223 12.3369C13.9134 12.5374 13.959 12.7562 13.959 12.9932Z"/>
+                        </svg>     
+                    </button>
+                </div>
+            </div>
+            <div class="grid view">
+                <div class="center text">
+                    <img src="Im/shelf/artifact-1.webp">
+                    <h7>Frames</h7>
+                    <p><span>Display your favorite memories.<br></span>Frames can hold photos of your recent hike or videos you took on your last trip to the beach.</p>
+                </div>
+                <div class="text">
+                    <img src="Im/shelf/artifact-2.webp">
+                    <h7>Books & Notes</h7>
+                    <p><span>Organize ideas in timeless forms.<br></span>From the first letter you type, you’ll realize how natural it is to make beautiful notes in Shelf.</p>
+                </div>
+                <div class="text">
+                    <img src="Im/shelf/artifact-3.webp">
+                    <h7>Voice</h7>
+                    <p><span>Say it in a thousand words.<br></span>Sometimes saying it loud helps us to think with clarity, and they’ve never been easier to search.</p>
+                </div>
+                <div class="text">
+                    <img src="Im/shelf/artifact-4.webp">
+                    <h7>Links</h7>
+                    <p><span>Save your corners of the web.<br></span>With three different styles, keep an eye on your favorite websites, future purchases, or articles.</p>
+                </div>
+                <div class="text">
+                    <img src="Im/shelf/artifact-5.webp">
+                    <h7>Shelf Tunnels</h7>
+                    <p><span>Tunnel into more shelf space.<br></span>Use tunnels to expand your shelf and better organize your collection. Like a folder, unlike any.</p>
+                </div>
+                <div class="text">
+                    <img src="Im/shelf/artifact-6.webp">
+                    <h7>Postal Baskets</h7>
+                    <p><span>Share with the ones you trust.<br></span>The Shelf Postal Service can send any item — even tunnels — instantly or on a special occasion.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cabinet">
+            <div class="view">
+                <holder>
+                    <div id="cabinet"></div>
+                    <div class="button-container">
+                        <button class="left" id="leftArrow">
+                            <svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.0410156 12.9932C0.0410156 13.2301 0.0865885 13.4489 0.177734 13.6494C0.26888 13.8499 0.405599 14.0413 0.587891 14.2236L11.2383 24.6416C11.5391 24.9515 11.9128 25.1064 12.3594 25.1064C12.651 25.1064 12.9199 25.0335 13.166 24.8877C13.4121 24.751 13.6081 24.5596 13.7539 24.3135C13.8906 24.0765 13.959 23.8122 13.959 23.5205C13.959 23.083 13.7949 22.6956 13.4668 22.3584L3.86914 12.9932L13.4668 3.62793C13.7949 3.29069 13.959 2.90788 13.959 2.47949C13.959 2.17871 13.8906 1.90983 13.7539 1.67285C13.6081 1.43587 13.4121 1.24902 13.166 1.1123C12.9199 0.966471 12.651 0.893555 12.3594 0.893555C11.9128 0.893555 11.5391 1.04395 11.2383 1.34473L0.587891 11.7627C0.405599 11.945 0.26888 12.1364 0.177734 12.3369C0.0865885 12.5374 0.0410156 12.7562 0.0410156 12.9932Z"/>
+                            </svg>  
+                        </button>
+                        <button class="right" id="rightArrow">
+                            <svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.959 12.9932C13.959 13.2301 13.9134 13.4489 13.8223 13.6494C13.7311 13.8499 13.5944 14.0413 13.4121 14.2236L2.76172 24.6416C2.46094 24.9515 2.08724 25.1064 1.64062 25.1064C1.34896 25.1064 1.08008 25.0335 0.833984 24.8877C0.587891 24.751 0.391927 24.5596 0.246094 24.3135C0.109375 24.0765 0.0410156 23.8122 0.0410156 23.5205C0.0410156 23.083 0.205078 22.6956 0.533203 22.3584L10.1309 12.9932L0.533203 3.62793C0.205078 3.29069 0.0410156 2.90788 0.0410156 2.47949C0.0410156 2.17871 0.109375 1.90983 0.246094 1.67285C0.391927 1.43587 0.587891 1.24902 0.833984 1.1123C1.08008 0.966471 1.34896 0.893555 1.64062 0.893555C2.08724 0.893555 2.46094 1.04395 2.76172 1.34473L13.4121 11.7627C13.5944 11.945 13.7311 12.1364 13.8223 12.3369C13.9134 12.5374 13.959 12.7562 13.959 12.9932Z"/>
+                            </svg>     
+                        </button>
+                    </div>
+                </holder>
+                <div class="text">
+                    <p id="cabinetText">
+                        <span>Add from anywhere.</span><br>Tap the cabinet to add, whether on the way to class, a first date, or simply lounging at home.
+                    </p>
+                </div>
+                <img style="width: 1px; opacity: 0;" src="Im/shelf/cabinet-1.webp">
+                <img style="width: 1px; opacity: 0;" src="Im/shelf/cabinet-2.webp">
+                <img style="width: 1px; opacity: 0;" src="Im/shelf/cabinet-3.webp">
+            </div>
+        </section>
+
+        <section class="handwriting">
+            <div class="align view">
+                <div class="text view">
+                    <div class="eyebrow view">
+                        <h7>Express Yourself</h7>
+                        <h3>Handwritten notes<br>& art alike.</h3>
+                    </div>
+                    <h7>
+                        It’s easy to put what you love in Shelf. Draw on paper and let your handwriting sing. Show off drawings inside Frames, and watch them animate your progress each time they come on screen.
+                    </h7>
+                </div>
+            </div>
+            <div class="view">
+                <img src="Im/shelf/iPad-1.webp">
+            </div>
+        </section>
+
+        <section class="drafts">
+            <div class="text view">
+                <p><span>Create drafts from anywhere.</span> On iPad or Mac, work on and store drafts for later. Drafts save automatically and can be added to Shelf at any time.</p>
+            </div>
+            <img src="Im/shelf/iPad-2.webp">
+        </section>
+
+        <section class="editorial">
+            <div class="align view">
+                <div class="eyebrow view">
+                    <h7>On Mac</h7>
+                    <h3>The ultimate editorial experience.</h3>
+                </div>
+            </div>
+            <img src="Im/shelf/mac-1.webp">
+            <div class="text view">
+                <p><span>Sweat the details.</span> And define how your poems, letters, and art look across all your devices with Fine Tune Control on Mac. Share on the web or export in epub so anyone can read your work, in the style you intend.</p>
+            </div>
+            <div class="align row view">
+                <div class="short eyebrow">
+                    <h7>Easy to Organize</h7>
+                    <h5>Drag and drop items across shelves or right into archive.</h5>
+                </div>
+                <img src="Im/shelf/mac-2.webp">
+            </div>
+        </section>
+
+        <section class="magic white">
+            <div class="align view">
+                <div class="eyebrow view">
+                    <h7>Emotional Interaction</h7>
+                    <h3>
+                        Humans form emotional connections to physical objects.<br><br>
+                        We handle items with care, or sometimes throw them in a fit of rage.<br><br>
+                        In Shelf, it’s no different. There’s emotional interaction.<br><br>
+                    </h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="vision">
+            <img src="Im/shelf/vision-1.webp" class="vis-1">
+        </section>
+
+        <section class="vision-text">
+            <div class="text row view">
+                <h5>Built for every emotion, even anger.</h5>
+                <h7>
+                    Try pushing over a shelf and watch as your items fall to the ground. Reorganize them with just your eyes, or sit on the floor and go through things one by one — just stomp or throw something to remove it.
+                </h7>
+            </div>
+        </section>
+
+        <section class="vision">
+            <img src="Im/shelf/vision-2.webp" class="vis-2">
+        </section>
+
+        <section class="vision-text">
+            <div class="text row view">
+                <h5>Personal furniture only you can see.</h5>
+                <h7>
+                    Tunnels can wrap around you — making you feel like you’re standing in a library of your own ideas and memories. And open up your shelves from anywhere, on a long flight or your walls at home. 
+                </h7>
+            </div>
+        </section>
+
+        <section class="workflow">
+            <div class="eyebrow view">
+                <h7>Time Capsules</h7>
+                <h3>Send bits of you to<br>future you. </h3>
+            </div>
+            <div class="align view">
+                <div class="flow" id="Slider2">
+                    <holder class="current">
+                        <img class="iPhone" src="Im/shelf/time-1.webp">
+                    </holder>
+                    <holder>
+                        <img class="iPhone" src="Im/shelf/time-2.webp">
+                    </holder>
+                    <holder>
+                        <img class="iPhone" src="Im/shelf/time-3.webp">
+                    </holder>
+                    <holder>
+                        <img class="iPhone" src="Im/shelf/time-4.webp">
+                    </holder>
+                    <holder>
+                        <img class="iPhone" src="Im/shelf/time-5.webp">
+                    </holder>
+                </div>
+                <div class="button-container">
+                    <button class="left" id="leftSlide2">
+                        <svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.0410156 12.9932C0.0410156 13.2301 0.0865885 13.4489 0.177734 13.6494C0.26888 13.8499 0.405599 14.0413 0.587891 14.2236L11.2383 24.6416C11.5391 24.9515 11.9128 25.1064 12.3594 25.1064C12.651 25.1064 12.9199 25.0335 13.166 24.8877C13.4121 24.751 13.6081 24.5596 13.7539 24.3135C13.8906 24.0765 13.959 23.8122 13.959 23.5205C13.959 23.083 13.7949 22.6956 13.4668 22.3584L3.86914 12.9932L13.4668 3.62793C13.7949 3.29069 13.959 2.90788 13.959 2.47949C13.959 2.17871 13.8906 1.90983 13.7539 1.67285C13.6081 1.43587 13.4121 1.24902 13.166 1.1123C12.9199 0.966471 12.651 0.893555 12.3594 0.893555C11.9128 0.893555 11.5391 1.04395 11.2383 1.34473L0.587891 11.7627C0.405599 11.945 0.26888 12.1364 0.177734 12.3369C0.0865885 12.5374 0.0410156 12.7562 0.0410156 12.9932Z"/>
+                        </svg>  
+                    </button>
+                    <button class="right" id="rightSlide2">
+                        <svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.959 12.9932C13.959 13.2301 13.9134 13.4489 13.8223 13.6494C13.7311 13.8499 13.5944 14.0413 13.4121 14.2236L2.76172 24.6416C2.46094 24.9515 2.08724 25.1064 1.64062 25.1064C1.34896 25.1064 1.08008 25.0335 0.833984 24.8877C0.587891 24.751 0.391927 24.5596 0.246094 24.3135C0.109375 24.0765 0.0410156 23.8122 0.0410156 23.5205C0.0410156 23.083 0.205078 22.6956 0.533203 22.3584L10.1309 12.9932L0.533203 3.62793C0.205078 3.29069 0.0410156 2.90788 0.0410156 2.47949C0.0410156 2.17871 0.109375 1.90983 0.246094 1.67285C0.391927 1.43587 0.587891 1.24902 0.833984 1.1123C1.08008 0.966471 1.34896 0.893555 1.64062 0.893555C2.08724 0.893555 2.46094 1.04395 2.76172 1.34473L13.4121 11.7627C13.5944 11.945 13.7311 12.1364 13.8223 12.3369C13.9134 12.5374 13.959 12.7562 13.959 12.9932Z"/>
+                        </svg>     
+                    </button>
+                </div>
+            </div>
+
+            <div class="row text view">
+                <p><span>Set your time.</span> Find the right look across all your devices, and with support for .epub, you have access to a familiar experience as Books on iPhone. </p>
+                <p><span>Seal.</span> Find the right look across all your devices, and with support for .epub, you have access to a familiar experience as Books on iPhone. </p>
+            </div>
+        </section>
+
+        <section class="workflow">
+            <div class="eyebrow view">
+                <h7>Shelf Postal Service</h7>
+                <h3>Designed for the ones<br>we trust.</h3>
+            </div>
+            <div class="align view">
+                <div class="flow" id="Slider3">
+                    <holder class="current">
+                        <img class="iPhone" src="Im/shelf/share-1.webp">
+                    </holder>
+                    <holder>
+                        <img class="iPhone" src="Im/shelf/share-2.webp">
+                    </holder>
+                    <holder>
+                        <img class="iPhone" src="Im/shelf/share-3.webp">
+                    </holder>
+                    <holder>
+                        <img class="iPhone" src="Im/shelf/share-4.webp">
+                    </holder>
+                    <holder>
+                        <img class="iPhone" src="Im/shelf/share-5.webp">
+                    </holder>
+                </div>
+                <div class="button-container">
+                    <button class="left" id="leftSlide3">
+                        <svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.0410156 12.9932C0.0410156 13.2301 0.0865885 13.4489 0.177734 13.6494C0.26888 13.8499 0.405599 14.0413 0.587891 14.2236L11.2383 24.6416C11.5391 24.9515 11.9128 25.1064 12.3594 25.1064C12.651 25.1064 12.9199 25.0335 13.166 24.8877C13.4121 24.751 13.6081 24.5596 13.7539 24.3135C13.8906 24.0765 13.959 23.8122 13.959 23.5205C13.959 23.083 13.7949 22.6956 13.4668 22.3584L3.86914 12.9932L13.4668 3.62793C13.7949 3.29069 13.959 2.90788 13.959 2.47949C13.959 2.17871 13.8906 1.90983 13.7539 1.67285C13.6081 1.43587 13.4121 1.24902 13.166 1.1123C12.9199 0.966471 12.651 0.893555 12.3594 0.893555C11.9128 0.893555 11.5391 1.04395 11.2383 1.34473L0.587891 11.7627C0.405599 11.945 0.26888 12.1364 0.177734 12.3369C0.0865885 12.5374 0.0410156 12.7562 0.0410156 12.9932Z"/>
+                        </svg>  
+                    </button>
+                    <button class="right" id="rightSlide3">
+                        <svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.959 12.9932C13.959 13.2301 13.9134 13.4489 13.8223 13.6494C13.7311 13.8499 13.5944 14.0413 13.4121 14.2236L2.76172 24.6416C2.46094 24.9515 2.08724 25.1064 1.64062 25.1064C1.34896 25.1064 1.08008 25.0335 0.833984 24.8877C0.587891 24.751 0.391927 24.5596 0.246094 24.3135C0.109375 24.0765 0.0410156 23.8122 0.0410156 23.5205C0.0410156 23.083 0.205078 22.6956 0.533203 22.3584L10.1309 12.9932L0.533203 3.62793C0.205078 3.29069 0.0410156 2.90788 0.0410156 2.47949C0.0410156 2.17871 0.109375 1.90983 0.246094 1.67285C0.391927 1.43587 0.587891 1.24902 0.833984 1.1123C1.08008 0.966471 1.34896 0.893555 1.64062 0.893555C2.08724 0.893555 2.46094 1.04395 2.76172 1.34473L13.4121 11.7627C13.5944 11.945 13.7311 12.1364 13.8223 12.3369C13.9134 12.5374 13.959 12.7562 13.959 12.9932Z"/>
+                        </svg>     
+                    </button>
+                </div>
+            </div>
+
+            <div class="left-align text view">
+                <p><span>Send your best.</span> Reflecting together is better than reflecting alone. Get all the second looks you need to find yourself. And keep finding yourself. Share and compare your Activity rings with friends and family to stay motivated.</p>
+            </div>
+        </section>
+
+        <section class="watch">
+            <div class="align view">
+                <div class="eyebrow view">
+                    <h7>On Apple Watch</h7>
+                    <h3>Your best work,<br>on a wrist.</h3>
+                </div>
+            </div>
+            <div class="grid view">
+                <div class="text">
+                    <img src="Im/shelf/watch-1.webp">
+                    <p><span>Timing is everything.<br></span>Get reminders triggered by your heart rate, the current weather, or activity, so you’ll always stay sharp.</p>
+                </div>
+                <div class="text">
+                    <img src="Im/shelf/watch-2.webp">
+                    <p><span>For the love of good art.<br></span>Get a clear view of your most important pieces, selected by time spent revisiting in mind.</p>
+                </div>
+                <div class="text">
+                    <img src="Im/shelf/watch-3.webp">
+                    <p><span>Dig in. Again and again. <br></span>And with a tap you can get into even more details of your most visited and thought through works.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="style">
+            <div class="view">
+                <img src="Im/shelf/style-1.webp">
+                <div class="text view">
+                    <div class="eyebrow view">
+                        <h6>Styles</h6>
+                        <h2>Make it Yours.</h2>
+                    </div>
+                    <h6>
+                        How Shelf looks is as important as what it does. So express yourself, again and again. Change your watch style on iPhone, and Shelf will automatically select photos to best complement your choice.
+                    </h6>
+                </div>
+            </div>
+        </section>
+
+        <section class="widgets">
+            <div class="align view">
+                <div class="text view">
+                    <div class="eyebrow view">
+                        <h7>Widgets</h7>
+                        <h3>Shelf on<br>your home screen.</h3>
+                    </div>
+                    <h7>
+                        Shelf Widgets can showcase recent items, surfacing items you may like to revisit. Larger widgets can even break out text from your notes or voice memos, and in its largest size, keep tabs on your recent deliveries.
+                    </h7>
+                </div>
+            </div>
+            <div class="view">
+                <div class="align screen">
+                    <img src="Im/shelf/w-iPhone.webp">
+                    <div class="no-overflow">
+                        <div class="flow" id="Slider4">
+                            <holder class="current">
+                                <img class="w-image" src="Im/shelf/widgets-1.webp">
+                            </holder>
+                            <holder>
+                                <img class="w-image" src="Im/shelf/widgets-2.webp">
+                            </holder>
+                            <holder>
+                                <img class="w-image" src="Im/shelf/widgets-3.webp">
+                            </holder>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="left" id="leftSlide4">
+                        <svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.0410156 12.9932C0.0410156 13.2301 0.0865885 13.4489 0.177734 13.6494C0.26888 13.8499 0.405599 14.0413 0.587891 14.2236L11.2383 24.6416C11.5391 24.9515 11.9128 25.1064 12.3594 25.1064C12.651 25.1064 12.9199 25.0335 13.166 24.8877C13.4121 24.751 13.6081 24.5596 13.7539 24.3135C13.8906 24.0765 13.959 23.8122 13.959 23.5205C13.959 23.083 13.7949 22.6956 13.4668 22.3584L3.86914 12.9932L13.4668 3.62793C13.7949 3.29069 13.959 2.90788 13.959 2.47949C13.959 2.17871 13.8906 1.90983 13.7539 1.67285C13.6081 1.43587 13.4121 1.24902 13.166 1.1123C12.9199 0.966471 12.651 0.893555 12.3594 0.893555C11.9128 0.893555 11.5391 1.04395 11.2383 1.34473L0.587891 11.7627C0.405599 11.945 0.26888 12.1364 0.177734 12.3369C0.0865885 12.5374 0.0410156 12.7562 0.0410156 12.9932Z"/>
+                        </svg>  
+                    </button>
+                    <button class="right" id="rightSlide4">
+                        <svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.959 12.9932C13.959 13.2301 13.9134 13.4489 13.8223 13.6494C13.7311 13.8499 13.5944 14.0413 13.4121 14.2236L2.76172 24.6416C2.46094 24.9515 2.08724 25.1064 1.64062 25.1064C1.34896 25.1064 1.08008 25.0335 0.833984 24.8877C0.587891 24.751 0.391927 24.5596 0.246094 24.3135C0.109375 24.0765 0.0410156 23.8122 0.0410156 23.5205C0.0410156 23.083 0.205078 22.6956 0.533203 22.3584L10.1309 12.9932L0.533203 3.62793C0.205078 3.29069 0.0410156 2.90788 0.0410156 2.47949C0.0410156 2.17871 0.109375 1.90983 0.246094 1.67285C0.391927 1.43587 0.587891 1.24902 0.833984 1.1123C1.08008 0.966471 1.34896 0.893555 1.64062 0.893555C2.08724 0.893555 2.46094 1.04395 2.76172 1.34473L13.4121 11.7627C13.5944 11.945 13.7311 12.1364 13.8223 12.3369C13.9134 12.5374 13.959 12.7562 13.959 12.9932Z"/>
+                        </svg>     
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="standby">
+            <div class="align view">
+                <div class="text view">
+                    <div class="eyebrow view">
+                        <h7>StandBy</h7>
+                        <h3>Self-reflective,<br>even before bed.</h3>
+                    </div>
+                    <h7>
+                        Shelf in StandBy displays items, notes, and voice that you can see from a distance. Just set iPhone on its side while charging to display items, showcase photos in Shelf, or keep an eye on your latest work.
+                    </h7>
+                </div>
+                <img style="width: 1px; opacity: 1;" src="Im/shelf/stand-1.webp">
+                <img style="width: 1px; opacity: 0;" src="Im/shelf/stand-2.webp">
+                <img style="width: 1px; opacity: 0;" src="Im/shelf/stand-3.webp">
+                <img style="width: 1px; opacity: 0;" src="Im/shelf/stand-4.webp">
+            </div>
+
+            <div class="view">
+                <div id="buttonContainer" class="button-container">
+                    <button class="current" imageUrl="Im/shelf/stand-1.webp">Widget</button>
+                    <button imageUrl="Im/shelf/stand-2.webp">Photo</button>
+                    <button imageUrl="Im/shelf/stand-3.webp">Voice</button>
+                    <button imageUrl="Im/shelf/stand-4.webp">Note</button>
+                </div>
+                <div id="stand"></div>
+            </div>                       
+        </section>
+
+        <section class="tv">
+            <div class="align view">
+                <div class="eyebrow view">
+                    <h7>See your Life</h7>
+                    <h3>On the big screen.</h3>
+                </div>
+            </div>
+
+            <img src="Im/shelf/tv-1.webp">
+
+            <div class="text view">
+                <p><span>You, at a glance.</span> Shelf finds recent photos and videos — even those you haven’t seen or thought about for a while — and creates beautiful collections you can show off on the big screen. </p>
+            </div>
+
+            <img src="Im/shelf/tv-2.webp">
+
+            <div class="row text view">
+                <p><span>Space specific highlights.</span> On a TV, Shelf gives you a unified viewing experience, letting you see your most important items, from all the spaces you’ve curated. </p>
+                <p><span>Photos, notes, and voice.</span> Add captions to photos on the biggest screen possible, and you can always easily view your latest notes and voice transcriptions. </p>
+            </div>
+        </section>
+
+        <section class="family">
+            <div class="align row view">
+                <div class="eyebrow view">
+                    <h7>Effortlessly Yours</h7>
+                    <h3>In every shade<br>you come.</h3>
+                </div>
+                <div id="colorContainer" class="view">
+                    <button class="current" imageUrl="Im/shelf/family-1.webp">
+                        <div class="color">
+                            <div class="paint slate"></div>
+                        </div>
+                        <p>Slate</p>
+                    </button>
+                    <button imageUrl="Im/shelf/family-2.webp">
+                        <div class="color">
+                            <div class="paint blue"></div>
+                        </div>
+                        <p>Blue</p>
+                    </button>
+                    <button imageUrl="Im/shelf/family-3.webp">
+                        <div class="color">
+                            <div class="paint pink"></div>
+                        </div>
+                        <p>Pink</p>
+                    </button>
+                    <button imageUrl="Im/shelf/family-4.webp">
+                        <div class="color">
+                            <div class="paint purple"></div>
+                        </div>
+                        <p>Purple</p>
+                    </button>
+                    <button imageUrl="Im/shelf/family-5.webp">
+                        <div class="color">
+                            <div class="paint green"></div>
+                        </div>
+                        <p>Green</p>
+                    </button>
+                </div>
+            </div>
+
+            <div class="view">
+                <div id="family"></div>
+                <img style="width: 1px; opacity: 1;" src="Im/shelf/family-1.webp">
+                <img style="width: 1px; opacity: 0;" src="Im/shelf/family-2.webp">
+                <img style="width: 1px; opacity: 0;" src="Im/shelf/family-3.webp">
+                <img style="width: 1px; opacity: 0;" src="Im/shelf/family-4.webp">
+                <img style="width: 1px; opacity: 0;" src="Im/shelf/family-5.webp">
+            </div>
+        </section>
+    </body>
+</div>
+
 
