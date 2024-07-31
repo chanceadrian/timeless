@@ -45,7 +45,7 @@ class Slideshow {
 
 // Instantiate the slideshow
 document.addEventListener('DOMContentLoaded', () => {
-    new Slideshow('Slider', 'leftSlide', 'rightSlide', 5);
+    new Slideshow('Slider', 'leftSlide', 'rightSlide', 19);
     new Slideshow('Slider2', 'leftSlide2', 'rightSlide2', 5);
     new Slideshow('Slider3', 'leftSlide3', 'rightSlide3', 5);
     new Slideshow('Slider4', 'leftSlide4', 'rightSlide4', 3);
@@ -121,6 +121,7 @@ class BackgroundSlideshow {
 // Instantiate the background slideshow
 document.addEventListener('DOMContentLoaded', () => {
     const cabinetImgs = [
+        { url: 'Im/shelf/cabinet-0.webp', content: "<h7><span>Cabinet</span></h7><br>Add as fast as you think, from any and every shelf." },
         { url: 'Im/shelf/cabinet-1.webp', content: "<h7><span>Add from anywhere.</span></h7><br>Tap the cabinet to add, whether on the way to class, a first date, or simply lounging at home." },
         { url: 'Im/shelf/cabinet-2.webp', content: "<h7><span>Two colors. Zero limits.</span></h7><br>Quickly change the look of Shelf with two colors, which charmingly paint every item and wall." },
         { url: 'Im/shelf/cabinet-3.webp', content: "<h7><span>Saved for later.</span></h7><br>Shelf's archive lets you browse and organize your items, bringing them back whenever you're ready." },
