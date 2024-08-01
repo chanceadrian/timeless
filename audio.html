@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio - Chance</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#F7F7F7">
+    <link rel="icon" href="Im/main/f-home.webp" type="image/webp">
+</head>
+
+<body class="audio">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shelf.html">Shelf</a>
+        <a href="about.html">About</a>
+        <a class="selected" href="audio.html">Audio</a>
+    </nav>
+
+    <view class="horizontal-gallery top">
+        <responsive>
+            <h5><prim>Playlists</prim> with enormous vision.</h5>
+            <carousel>
+                <slider id="music">
+                    <a class="wonderful" href="https://music.apple.com/us/playlist/make-something-wonderful/pl.u-eok9HK8dYl8" target="_blank">
+                        <h1>Make something wonderful</h1>
+                        <h7>A playlist for changing the world</h7>
+                        <border>Listen</border>
+                    </a>
+                    <a class="soft" href="https://music.apple.com/us/playlist/soft-rhymes-and-indoor-lines/pl.u-dvp0CDJ46kJ" target="_blank">
+                        <h1>Soft rhymes and indoor lines</h1>
+                        <h7>A playlist for lightening chaos</h7>
+                        <border>Listen</border>
+                    </a>
+                    <a class="human" href="https://music.apple.com/us/playlist/nothing-human-is-alien-to-me/pl.u-JBNVtE2Gez2" target="_blank">
+                        <h1>Nothing human is alien to me</h1>
+                        <h7>A playlist for every human condition</h7>
+                        <border>Listen</border>
+                    </a>
+                </slider>
+            </carousel>
+            <controls>
+                <button class="left" id="leftSlide3">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.654541 8C0.660075 7.82845 0.693278 7.67074 0.75415 7.52686C0.820557 7.38298 0.920166 7.24463 1.05298 7.11182L7.44458 0.861328C7.65487 0.651042 7.91219 0.545898 8.21655 0.545898C8.42684 0.545898 8.61499 0.595703 8.78101 0.695312C8.95256 0.794922 9.08813 0.930501 9.18774 1.10205C9.29289 1.26807 9.34546 1.45345 9.34546 1.6582C9.34546 1.9681 9.22925 2.23926 8.99683 2.47168L3.31079 8L8.99683 13.5283C9.22925 13.7663 9.34546 14.0374 9.34546 14.3418C9.34546 14.5521 9.29289 14.7402 9.18774 14.9062C9.08813 15.0723 8.95256 15.2051 8.78101 15.3047C8.61499 15.4043 8.42684 15.4541 8.21655 15.4541C7.91219 15.4541 7.65487 15.349 7.44458 15.1387L1.05298 8.88818C0.914632 8.75537 0.812256 8.61702 0.74585 8.47314C0.684977 8.32373 0.654541 8.16602 0.654541 8Z" fill="black" fill-opacity="0.5"/>
+                    </svg>
+                </button>
+                <platter id="platter3">
+                    <indicator class="selected"></indicator>
+                    <indicator></indicator>
+                    <indicator></indicator>
+                </platter>
+                <button class="right" id="rightSlide3">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.34546 8C9.34546 8.16602 9.31226 8.32373 9.24585 8.47314C9.18498 8.61702 9.08537 8.75537 8.94702 8.88818L2.56372 15.1387C2.3479 15.349 2.08504 15.4541 1.77515 15.4541C1.57593 15.4541 1.39054 15.4043 1.21899 15.3047C1.04744 15.2051 0.909098 15.0723 0.803955 14.9062C0.704346 14.7402 0.654541 14.5521 0.654541 14.3418C0.654541 14.0374 0.770752 13.7663 1.00317 13.5283L6.68921 8L1.00317 2.47168C0.770752 2.23926 0.654541 1.9681 0.654541 1.6582C0.654541 1.45345 0.704346 1.26807 0.803955 1.10205C0.909098 0.930501 1.04744 0.794922 1.21899 0.695312C1.39054 0.595703 1.57593 0.545898 1.77515 0.545898C2.08504 0.545898 2.3479 0.651042 2.56372 0.861328L8.94702 7.11182C9.07983 7.24463 9.17944 7.38298 9.24585 7.52686C9.31226 7.67074 9.34546 7.82845 9.34546 8Z" fill="black" fill-opacity="0.5"/>
+                    </svg>  
+                </button>
+            </controls>
+        </responsive>
+    </view>
+
+    <view class="playlist bottom">
+        <responsive>
+            <h5><prim>Anthems</prim> that supercharged designs.</h5>
+            <div class="list">
+                <heading>
+                    <art class="ghost" style="background-image: url(Im/main/Head.webp);"></art>
+                    <p>Song</p>
+                    <p>Artist</p>
+                    <p>Project</p>
+                    <play class="ghost"> 
+                        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.3418 13.2C1.07324 13.2 0.858398 13.1023 0.697266 12.907C0.541016 12.7166 0.462891 12.4626 0.462891 12.1453V1.84741C0.462891 1.53003 0.541016 1.27612 0.697266 1.08569C0.858398 0.895264 1.07324 0.800049 1.3418 0.800049C1.48828 0.800049 1.62744 0.826904 1.75928 0.880615C1.89111 0.929443 2.03027 0.995361 2.17676 1.07837L10.7168 6.02222C11.0244 6.198 11.2368 6.35669 11.354 6.49829C11.4761 6.63501 11.5371 6.80103 11.5371 6.99634C11.5371 7.19165 11.4761 7.36011 11.354 7.50171C11.2368 7.63843 11.0244 7.79712 10.7168 7.97778L2.17676 12.9143C2.03027 13.0022 1.89111 13.0706 1.75928 13.1194C1.62744 13.1731 1.48828 13.2 1.3418 13.2Z" fill="black" fill-opacity="0.5"/>
+                        </svg>
+                    </play>
+                </heading>
+
+                <a href="https://songwhip.com/tears-for-fears/head-over-heels-dave-bascombe-7-nmix" target="_blank" class="gray">
+                    <art style="background-image: url(Im/audio/Head.webp);"></art>
+                    <p>Head Over Heels</p>
+                    <p>Tears for Fears</p>
+                    <p>Shelf</p>
+                    <play>
+                        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.3418 13.2C1.07324 13.2 0.858398 13.1023 0.697266 12.907C0.541016 12.7166 0.462891 12.4626 0.462891 12.1453V1.84741C0.462891 1.53003 0.541016 1.27612 0.697266 1.08569C0.858398 0.895264 1.07324 0.800049 1.3418 0.800049C1.48828 0.800049 1.62744 0.826904 1.75928 0.880615C1.89111 0.929443 2.03027 0.995361 2.17676 1.07837L10.7168 6.02222C11.0244 6.198 11.2368 6.35669 11.354 6.49829C11.4761 6.63501 11.5371 6.80103 11.5371 6.99634C11.5371 7.19165 11.4761 7.36011 11.354 7.50171C11.2368 7.63843 11.0244 7.79712 10.7168 7.97778L2.17676 12.9143C2.03027 13.0022 1.89111 13.0706 1.75928 13.1194C1.62744 13.1731 1.48828 13.2 1.3418 13.2Z" fill="black" fill-opacity="0.5"/>
+                        </svg>
+                    </play>
+                </a>
+                <a href="https://songwhip.com/little-dragon/blinking-pigs" target="_blank">
+                    <art style="background-image: url(Im/audio/Blinking.webp);"></art>
+                    <p>Blinking Pigs</p>
+                    <p>Little Dragon</p>
+                    <p>Web</p>
+                    <play>
+                        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.3418 13.2C1.07324 13.2 0.858398 13.1023 0.697266 12.907C0.541016 12.7166 0.462891 12.4626 0.462891 12.1453V1.84741C0.462891 1.53003 0.541016 1.27612 0.697266 1.08569C0.858398 0.895264 1.07324 0.800049 1.3418 0.800049C1.48828 0.800049 1.62744 0.826904 1.75928 0.880615C1.89111 0.929443 2.03027 0.995361 2.17676 1.07837L10.7168 6.02222C11.0244 6.198 11.2368 6.35669 11.354 6.49829C11.4761 6.63501 11.5371 6.80103 11.5371 6.99634C11.5371 7.19165 11.4761 7.36011 11.354 7.50171C11.2368 7.63843 11.0244 7.79712 10.7168 7.97778L2.17676 12.9143C2.03027 13.0022 1.89111 13.0706 1.75928 13.1194C1.62744 13.1731 1.48828 13.2 1.3418 13.2Z" fill="black" fill-opacity="0.5"/>
+                        </svg>
+                    </play>
+                </a>
+                <a href="https://songwhip.com/little-dragon/feather" class="gray" target="_blank">
+                    <art style="background-image: url(Im/audio/Blinking.webp);"></art>
+                    <p>Feather</p>
+                    <p>Little Dragon</p>
+                    <p>Web</p>
+                    <play>
+                        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.3418 13.2C1.07324 13.2 0.858398 13.1023 0.697266 12.907C0.541016 12.7166 0.462891 12.4626 0.462891 12.1453V1.84741C0.462891 1.53003 0.541016 1.27612 0.697266 1.08569C0.858398 0.895264 1.07324 0.800049 1.3418 0.800049C1.48828 0.800049 1.62744 0.826904 1.75928 0.880615C1.89111 0.929443 2.03027 0.995361 2.17676 1.07837L10.7168 6.02222C11.0244 6.198 11.2368 6.35669 11.354 6.49829C11.4761 6.63501 11.5371 6.80103 11.5371 6.99634C11.5371 7.19165 11.4761 7.36011 11.354 7.50171C11.2368 7.63843 11.0244 7.79712 10.7168 7.97778L2.17676 12.9143C2.03027 13.0022 1.89111 13.0706 1.75928 13.1194C1.62744 13.1731 1.48828 13.2 1.3418 13.2Z" fill="black" fill-opacity="0.5"/>
+                        </svg>
+                    </play>
+                </a>
+                <a href="https://songwhip.com/tv-girl/it-almost-worked" target="_blank">
+                    <art style="background-image: url(Im/audio/It.webp);"></art>
+                    <p>It Almost Worked</p>
+                    <p>TV Girl</p>
+                    <p>Shelf</p>
+                    <play>
+                        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.3418 13.2C1.07324 13.2 0.858398 13.1023 0.697266 12.907C0.541016 12.7166 0.462891 12.4626 0.462891 12.1453V1.84741C0.462891 1.53003 0.541016 1.27612 0.697266 1.08569C0.858398 0.895264 1.07324 0.800049 1.3418 0.800049C1.48828 0.800049 1.62744 0.826904 1.75928 0.880615C1.89111 0.929443 2.03027 0.995361 2.17676 1.07837L10.7168 6.02222C11.0244 6.198 11.2368 6.35669 11.354 6.49829C11.4761 6.63501 11.5371 6.80103 11.5371 6.99634C11.5371 7.19165 11.4761 7.36011 11.354 7.50171C11.2368 7.63843 11.0244 7.79712 10.7168 7.97778L2.17676 12.9143C2.03027 13.0022 1.89111 13.0706 1.75928 13.1194C1.62744 13.1731 1.48828 13.2 1.3418 13.2Z" fill="black" fill-opacity="0.5"/>
+                        </svg>
+                    </play>
+                </a>
+                <a href="https://songwhip.com/ludwig-goransson/can-you-hear-the-music" class="gray" target="_blank">
+                    <art style="background-image: url(Im/audio/Can.webp);"></art>
+                    <p>Can You Hear the Music</p>
+                    <p>Ludwig Göransson</p>
+                    <p>Web</p>
+                    <play>
+                        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.3418 13.2C1.07324 13.2 0.858398 13.1023 0.697266 12.907C0.541016 12.7166 0.462891 12.4626 0.462891 12.1453V1.84741C0.462891 1.53003 0.541016 1.27612 0.697266 1.08569C0.858398 0.895264 1.07324 0.800049 1.3418 0.800049C1.48828 0.800049 1.62744 0.826904 1.75928 0.880615C1.89111 0.929443 2.03027 0.995361 2.17676 1.07837L10.7168 6.02222C11.0244 6.198 11.2368 6.35669 11.354 6.49829C11.4761 6.63501 11.5371 6.80103 11.5371 6.99634C11.5371 7.19165 11.4761 7.36011 11.354 7.50171C11.2368 7.63843 11.0244 7.79712 10.7168 7.97778L2.17676 12.9143C2.03027 13.0022 1.89111 13.0706 1.75928 13.1194C1.62744 13.1731 1.48828 13.2 1.3418 13.2Z" fill="black" fill-opacity="0.5"/>
+                        </svg>
+                    </play>
+                </a>
+                <a href="https://songwhip.com/the-housemartins/build1987" target="_blank">
+                    <art style="background-image: url(Im/audio/Build.webp);"></art>
+                    <p>Build</p>
+                    <p>The Housemartinis</p>
+                    <p>Shelf</p>
+                    <play>
+                        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.3418 13.2C1.07324 13.2 0.858398 13.1023 0.697266 12.907C0.541016 12.7166 0.462891 12.4626 0.462891 12.1453V1.84741C0.462891 1.53003 0.541016 1.27612 0.697266 1.08569C0.858398 0.895264 1.07324 0.800049 1.3418 0.800049C1.48828 0.800049 1.62744 0.826904 1.75928 0.880615C1.89111 0.929443 2.03027 0.995361 2.17676 1.07837L10.7168 6.02222C11.0244 6.198 11.2368 6.35669 11.354 6.49829C11.4761 6.63501 11.5371 6.80103 11.5371 6.99634C11.5371 7.19165 11.4761 7.36011 11.354 7.50171C11.2368 7.63843 11.0244 7.79712 10.7168 7.97778L2.17676 12.9143C2.03027 13.0022 1.89111 13.0706 1.75928 13.1194C1.62744 13.1731 1.48828 13.2 1.3418 13.2Z" fill="black" fill-opacity="0.5"/>
+                        </svg>
+                    </play>
+                </a>
+                <a href="https://songwhip.com/javelin/we-ah-wi" class="gray" target="_blank">
+                    <art style="background-image: url(Im/audio/We.webp);"></art>
+                    <p>We Ah Wi</p>
+                    <p>Javelin</p>
+                    <p>Web</p>
+                    <play>
+                        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.3418 13.2C1.07324 13.2 0.858398 13.1023 0.697266 12.907C0.541016 12.7166 0.462891 12.4626 0.462891 12.1453V1.84741C0.462891 1.53003 0.541016 1.27612 0.697266 1.08569C0.858398 0.895264 1.07324 0.800049 1.3418 0.800049C1.48828 0.800049 1.62744 0.826904 1.75928 0.880615C1.89111 0.929443 2.03027 0.995361 2.17676 1.07837L10.7168 6.02222C11.0244 6.198 11.2368 6.35669 11.354 6.49829C11.4761 6.63501 11.5371 6.80103 11.5371 6.99634C11.5371 7.19165 11.4761 7.36011 11.354 7.50171C11.2368 7.63843 11.0244 7.79712 10.7168 7.97778L2.17676 12.9143C2.03027 13.0022 1.89111 13.0706 1.75928 13.1194C1.62744 13.1731 1.48828 13.2 1.3418 13.2Z" fill="black" fill-opacity="0.5"/>
+                        </svg>
+                    </play>
+                </a>
+                <a href="https://songwhip.com/anthonywillis/i-loved-him-oliver-quick" target="_blank">
+                    <art style="background-image: url(Im/audio/ILoved.webp);"></art>
+                    <p>I Loved HIm/audio/ Oliver Quick!</p>
+                    <p>Anthony Willis</p>
+                    <p>Web</p>
+                    <play>
+                        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.3418 13.2C1.07324 13.2 0.858398 13.1023 0.697266 12.907C0.541016 12.7166 0.462891 12.4626 0.462891 12.1453V1.84741C0.462891 1.53003 0.541016 1.27612 0.697266 1.08569C0.858398 0.895264 1.07324 0.800049 1.3418 0.800049C1.48828 0.800049 1.62744 0.826904 1.75928 0.880615C1.89111 0.929443 2.03027 0.995361 2.17676 1.07837L10.7168 6.02222C11.0244 6.198 11.2368 6.35669 11.354 6.49829C11.4761 6.63501 11.5371 6.80103 11.5371 6.99634C11.5371 7.19165 11.4761 7.36011 11.354 7.50171C11.2368 7.63843 11.0244 7.79712 10.7168 7.97778L2.17676 12.9143C2.03027 13.0022 1.89111 13.0706 1.75928 13.1194C1.62744 13.1731 1.48828 13.2 1.3418 13.2Z" fill="black" fill-opacity="0.5"/>
+                        </svg>
+                    </play>
+                </a>
+                <a href="https://songwhip.com/midwestproduct/clarity" class="gray" target="_blank">
+                    <art style="background-image: url(Im/audio/Clarity.webp);"></art>
+                    <p>Clarity</p>
+                    <p>Midwest Product</p>
+                    <p>Shelf</p>
+                    <play>
+                        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.3418 13.2C1.07324 13.2 0.858398 13.1023 0.697266 12.907C0.541016 12.7166 0.462891 12.4626 0.462891 12.1453V1.84741C0.462891 1.53003 0.541016 1.27612 0.697266 1.08569C0.858398 0.895264 1.07324 0.800049 1.3418 0.800049C1.48828 0.800049 1.62744 0.826904 1.75928 0.880615C1.89111 0.929443 2.03027 0.995361 2.17676 1.07837L10.7168 6.02222C11.0244 6.198 11.2368 6.35669 11.354 6.49829C11.4761 6.63501 11.5371 6.80103 11.5371 6.99634C11.5371 7.19165 11.4761 7.36011 11.354 7.50171C11.2368 7.63843 11.0244 7.79712 10.7168 7.97778L2.17676 12.9143C2.03027 13.0022 1.89111 13.0706 1.75928 13.1194C1.62744 13.1731 1.48828 13.2 1.3418 13.2Z" fill="black" fill-opacity="0.5"/>
+                        </svg>
+                    </play>
+                </a>
+                <a href="https://songwhip.com/woolfy/cellophane" target="_blank">
+                    <art style="background-image: url(Im/audio/Cellophane.webp);"></art>
+                    <p>Cellophane</p>
+                    <p>Woolfy & Projections</p>
+                    <p>Shelf</p>
+                    <play>
+                        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.3418 13.2C1.07324 13.2 0.858398 13.1023 0.697266 12.907C0.541016 12.7166 0.462891 12.4626 0.462891 12.1453V1.84741C0.462891 1.53003 0.541016 1.27612 0.697266 1.08569C0.858398 0.895264 1.07324 0.800049 1.3418 0.800049C1.48828 0.800049 1.62744 0.826904 1.75928 0.880615C1.89111 0.929443 2.03027 0.995361 2.17676 1.07837L10.7168 6.02222C11.0244 6.198 11.2368 6.35669 11.354 6.49829C11.4761 6.63501 11.5371 6.80103 11.5371 6.99634C11.5371 7.19165 11.4761 7.36011 11.354 7.50171C11.2368 7.63843 11.0244 7.79712 10.7168 7.97778L2.17676 12.9143C2.03027 13.0022 1.89111 13.0706 1.75928 13.1194C1.62744 13.1731 1.48828 13.2 1.3418 13.2Z" fill="black" fill-opacity="0.5"/>
+                        </svg>
+                    </play>
+                </a>
+                <a href="https://songwhip.com/daft-punk/lose-yourself-to-dance" class="gray" target="_blank">
+                    <art style="background-image: url(Im/audio/Lose.webp);"></art>
+                    <p>Lose Yourself to Dance</p>
+                    <p>Daft Punk</p>
+                    <p>Shelf</p>
+                    <play>
+                        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.3418 13.2C1.07324 13.2 0.858398 13.1023 0.697266 12.907C0.541016 12.7166 0.462891 12.4626 0.462891 12.1453V1.84741C0.462891 1.53003 0.541016 1.27612 0.697266 1.08569C0.858398 0.895264 1.07324 0.800049 1.3418 0.800049C1.48828 0.800049 1.62744 0.826904 1.75928 0.880615C1.89111 0.929443 2.03027 0.995361 2.17676 1.07837L10.7168 6.02222C11.0244 6.198 11.2368 6.35669 11.354 6.49829C11.4761 6.63501 11.5371 6.80103 11.5371 6.99634C11.5371 7.19165 11.4761 7.36011 11.354 7.50171C11.2368 7.63843 11.0244 7.79712 10.7168 7.97778L2.17676 12.9143C2.03027 13.0022 1.89111 13.0706 1.75928 13.1194C1.62744 13.1731 1.48828 13.2 1.3418 13.2Z" fill="black" fill-opacity="0.5"/>
+                        </svg>
+                    </play>
+                </a>
+                <a href="https://songwhip.com/daft-punk/voyager" target="_blank">
+                    <art style="background-image: url(Im/audio/Voyager.webp);"></art>
+                    <p>Voyager</p>
+                    <p>Daft Punk</p>
+                    <p>Web</p>
+                    <play>
+                        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.3418 13.2C1.07324 13.2 0.858398 13.1023 0.697266 12.907C0.541016 12.7166 0.462891 12.4626 0.462891 12.1453V1.84741C0.462891 1.53003 0.541016 1.27612 0.697266 1.08569C0.858398 0.895264 1.07324 0.800049 1.3418 0.800049C1.48828 0.800049 1.62744 0.826904 1.75928 0.880615C1.89111 0.929443 2.03027 0.995361 2.17676 1.07837L10.7168 6.02222C11.0244 6.198 11.2368 6.35669 11.354 6.49829C11.4761 6.63501 11.5371 6.80103 11.5371 6.99634C11.5371 7.19165 11.4761 7.36011 11.354 7.50171C11.2368 7.63843 11.0244 7.79712 10.7168 7.97778L2.17676 12.9143C2.03027 13.0022 1.89111 13.0706 1.75928 13.1194C1.62744 13.1731 1.48828 13.2 1.3418 13.2Z" fill="black" fill-opacity="0.5"/>
+                        </svg>
+                    </play>
+                </a>
+                <a href="https://songwhip.com/the-human-league/seconds1981" class="gray" target="_blank">
+                    <art style="background-image: url(Im/audio/Seconds.webp);"></art>
+                    <p>Seconds</p>
+                    <p>The Human League</p>
+                    <p>Shelf</p>
+                    <play>
+                        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.3418 13.2C1.07324 13.2 0.858398 13.1023 0.697266 12.907C0.541016 12.7166 0.462891 12.4626 0.462891 12.1453V1.84741C0.462891 1.53003 0.541016 1.27612 0.697266 1.08569C0.858398 0.895264 1.07324 0.800049 1.3418 0.800049C1.48828 0.800049 1.62744 0.826904 1.75928 0.880615C1.89111 0.929443 2.03027 0.995361 2.17676 1.07837L10.7168 6.02222C11.0244 6.198 11.2368 6.35669 11.354 6.49829C11.4761 6.63501 11.5371 6.80103 11.5371 6.99634C11.5371 7.19165 11.4761 7.36011 11.354 7.50171C11.2368 7.63843 11.0244 7.79712 10.7168 7.97778L2.17676 12.9143C2.03027 13.0022 1.89111 13.0706 1.75928 13.1194C1.62744 13.1731 1.48828 13.2 1.3418 13.2Z" fill="black" fill-opacity="0.5"/>
+                        </svg>
+                    </play>
+                </a>
+                <a href="https://songwhip.com/soda-stereo/nada-personal" target="_blank">
+                    <art style="background-image: url(Im/audio/Nada.webp);"></art>
+                    <p>Nada Personal</p>
+                    <p>Soda Stereo</p>
+                    <p>Web</p>
+                    <play>
+                        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.3418 13.2C1.07324 13.2 0.858398 13.1023 0.697266 12.907C0.541016 12.7166 0.462891 12.4626 0.462891 12.1453V1.84741C0.462891 1.53003 0.541016 1.27612 0.697266 1.08569C0.858398 0.895264 1.07324 0.800049 1.3418 0.800049C1.48828 0.800049 1.62744 0.826904 1.75928 0.880615C1.89111 0.929443 2.03027 0.995361 2.17676 1.07837L10.7168 6.02222C11.0244 6.198 11.2368 6.35669 11.354 6.49829C11.4761 6.63501 11.5371 6.80103 11.5371 6.99634C11.5371 7.19165 11.4761 7.36011 11.354 7.50171C11.2368 7.63843 11.0244 7.79712 10.7168 7.97778L2.17676 12.9143C2.03027 13.0022 1.89111 13.0706 1.75928 13.1194C1.62744 13.1731 1.48828 13.2 1.3418 13.2Z" fill="black" fill-opacity="0.5"/>
+                        </svg>
+                    </play>
+                </a>
+                <a href="https://songwhip.com/orchestralmanoeuvresinthedark/so-in-love" class="gray" target="_blank">
+                    <art style="background-image: url(Im/audio/So.webp);"></art>
+                    <p>So In Love</p>
+                    <p>Orchestral Maneuvers In the Dark</p>
+                    <p>Shelf</p>
+                    <play>
+                        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.3418 13.2C1.07324 13.2 0.858398 13.1023 0.697266 12.907C0.541016 12.7166 0.462891 12.4626 0.462891 12.1453V1.84741C0.462891 1.53003 0.541016 1.27612 0.697266 1.08569C0.858398 0.895264 1.07324 0.800049 1.3418 0.800049C1.48828 0.800049 1.62744 0.826904 1.75928 0.880615C1.89111 0.929443 2.03027 0.995361 2.17676 1.07837L10.7168 6.02222C11.0244 6.198 11.2368 6.35669 11.354 6.49829C11.4761 6.63501 11.5371 6.80103 11.5371 6.99634C11.5371 7.19165 11.4761 7.36011 11.354 7.50171C11.2368 7.63843 11.0244 7.79712 10.7168 7.97778L2.17676 12.9143C2.03027 13.0022 1.89111 13.0706 1.75928 13.1194C1.62744 13.1731 1.48828 13.2 1.3418 13.2Z" fill="black" fill-opacity="0.5"/>
+                        </svg>
+                    </play>
+                </a>
+                <a href="https://songwhip.com/anthonywillis/felix-amica" target="_blank">
+                    <art style="background-image: url(Im/audio/ILoved.webp);"></art>
+                    <p>Felix Amica</p>
+                    <p>Anthony Willis</p>
+                    <p>Shelf</p>
+                    <play>
+                        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.3418 13.2C1.07324 13.2 0.858398 13.1023 0.697266 12.907C0.541016 12.7166 0.462891 12.4626 0.462891 12.1453V1.84741C0.462891 1.53003 0.541016 1.27612 0.697266 1.08569C0.858398 0.895264 1.07324 0.800049 1.3418 0.800049C1.48828 0.800049 1.62744 0.826904 1.75928 0.880615C1.89111 0.929443 2.03027 0.995361 2.17676 1.07837L10.7168 6.02222C11.0244 6.198 11.2368 6.35669 11.354 6.49829C11.4761 6.63501 11.5371 6.80103 11.5371 6.99634C11.5371 7.19165 11.4761 7.36011 11.354 7.50171C11.2368 7.63843 11.0244 7.79712 10.7168 7.97778L2.17676 12.9143C2.03027 13.0022 1.89111 13.0706 1.75928 13.1194C1.62744 13.1731 1.48828 13.2 1.3418 13.2Z" fill="black" fill-opacity="0.5"/>
+                        </svg>
+                    </play>
+                </a>
+            </div>
+        </responsive>
+    </view>
+
+    <view class="chin main">
+        <responsive>
+            <p>SF Icons appearing in the navigation bar, Ideas for the future, and Writing — Foundations and Principles are the property of Apple, and have been used only as a loving and careful reference to the design ethos responsible for the development of iOS, iPadOS, macOS, visionOS, watchOS, and tvOS software platforms.</p>
+        </responsive>
+    </view>
+
+    <script src="index.js"></script>
+</body>

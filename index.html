@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Chance</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#FFFFFF">
+    <link rel="icon" href="Im/main/f-home.webp" type="image/webp">
+</head>
+
+<body>
+    <nav>
+        <a class="selected" href="index.html">Home</a>
+        <a href="shelf.html">Shelf</a>
+        <a href="about.html">About</a>
+        <a href="audio.html">Audio</a>
+    </nav>
+
+    <view class="shelf-cover">
+        <a href="shelf.html">
+            <responsive>
+                <h3>Shelf</h3>
+                <holder>
+                    <img class="iPhone" src="Im/main/poster-1.webp">
+                </holder>
+                <h5>Designed for<br>introspection.</h5>
+            </responsive>
+        </a>
+    </view>
+
+    <view class="horizontal-gallery">
+        <responsive>
+            <h5><prim>Writing</prim> — Foundations and Principles.</h5>
+            <carousel>
+                <slider id="writing">
+                    <a href="what-is-design.html" class="design">
+                        <h1>What is Design?</h1>
+                        <h7>Essential Principles</h7>
+                        <border>Read</border>
+                    </a>
+                    <a href="thinkfar-stayfoolish.html" class="think">
+                        <h1>Think Far, <br class="small">Stay Foolish</h1>
+                        <h7>An Ethos for Changing the World</h7>
+                        <border>Read</border>
+                    </a>
+                    <a href="cosmic-vision.html" class="cosmic">
+                        <h1>Cosmic Vision</h1>
+                        <h7>On Asking 100 Year Questions</h7>
+                        <border>Read</border>
+                    </a>
+                </slider>
+            </carousel>
+            <controls>
+                <button class="left" id="leftSlide">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.654541 8C0.660075 7.82845 0.693278 7.67074 0.75415 7.52686C0.820557 7.38298 0.920166 7.24463 1.05298 7.11182L7.44458 0.861328C7.65487 0.651042 7.91219 0.545898 8.21655 0.545898C8.42684 0.545898 8.61499 0.595703 8.78101 0.695312C8.95256 0.794922 9.08813 0.930501 9.18774 1.10205C9.29289 1.26807 9.34546 1.45345 9.34546 1.6582C9.34546 1.9681 9.22925 2.23926 8.99683 2.47168L3.31079 8L8.99683 13.5283C9.22925 13.7663 9.34546 14.0374 9.34546 14.3418C9.34546 14.5521 9.29289 14.7402 9.18774 14.9062C9.08813 15.0723 8.95256 15.2051 8.78101 15.3047C8.61499 15.4043 8.42684 15.4541 8.21655 15.4541C7.91219 15.4541 7.65487 15.349 7.44458 15.1387L1.05298 8.88818C0.914632 8.75537 0.812256 8.61702 0.74585 8.47314C0.684977 8.32373 0.654541 8.16602 0.654541 8Z" fill="black" fill-opacity="0.5"/>
+                    </svg>
+                </button>
+                <platter id="platter">
+                    <indicator class="selected"></indicator>
+                    <indicator></indicator>
+                    <indicator></indicator>
+                </platter>
+                <button class="right" id="rightSlide">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.34546 8C9.34546 8.16602 9.31226 8.32373 9.24585 8.47314C9.18498 8.61702 9.08537 8.75537 8.94702 8.88818L2.56372 15.1387C2.3479 15.349 2.08504 15.4541 1.77515 15.4541C1.57593 15.4541 1.39054 15.4043 1.21899 15.3047C1.04744 15.2051 0.909098 15.0723 0.803955 14.9062C0.704346 14.7402 0.654541 14.5521 0.654541 14.3418C0.654541 14.0374 0.770752 13.7663 1.00317 13.5283L6.68921 8L1.00317 2.47168C0.770752 2.23926 0.654541 1.9681 0.654541 1.6582C0.654541 1.45345 0.704346 1.26807 0.803955 1.10205C0.909098 0.930501 1.04744 0.794922 1.21899 0.695312C1.39054 0.595703 1.57593 0.545898 1.77515 0.545898C2.08504 0.545898 2.3479 0.651042 2.56372 0.861328L8.94702 7.11182C9.07983 7.24463 9.17944 7.38298 9.24585 7.52686C9.31226 7.67074 9.34546 7.82845 9.34546 8Z" fill="black" fill-opacity="0.5"/>
+                    </svg>  
+                </button>
+            </controls>
+        </responsive>
+    </view>
+
+    <view class="chin main">
+        <responsive>
+            <column>
+                <p>SF Icons appearing in the navigation bar, Ideas for the future, and Writing — Foundations and Principles are the property of Apple, and have been used only as a loving and careful reference to the design ethos responsible for the development of iOS, iPadOS, macOS, visionOS, watchOS, and tvOS software platforms.</p>
+            </column>
+        </responsive>
+    </view>
+
+    <script src="index.js"></script>
+
+</body>
