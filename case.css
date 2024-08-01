@@ -206,7 +206,6 @@ nav {
 .key {
     gap: var(--secondary-section-gap);
     padding-block: var(--secondary-block-padding);
-    padding-top: 100px;
     text-align: center;
 
     .text {
@@ -275,10 +274,10 @@ nav {
 
 @keyframes moveAnimation {
     0% {
-        transform: translateX(1600px);
+        transform: translateX(1700px);
     }
     25% {
-        transform: translateX(1600px);
+        transform: translateX(1700px);
         opacity: 0.75;
     }
     75% {
@@ -302,10 +301,6 @@ nav {
 /* iOS */
 .workflow {
 
-    .align {
-        height: 780px;
-    }
-
     .eyebrow, .text {
         align-items: center;
         text-align: center;
@@ -316,32 +311,32 @@ nav {
         grid-auto-flow: column;
         width: -moz-fit-content;
         width: fit-content;
-        margin-inline: 265px;
+        margin-inline: 253px;
         transition: all 0.6s cubic-bezier(0.28, 0.11, 0.32, 1);
         position: relative;
         align-items: start;
+
+        .eyebrow {
+            height: 100%;
+            justify-content: center;
+            width: 480px;
+            gap: 20px;
+    
+            img {
+                min-width: 260px;
+            }
+    
+            p {
+                width: 190px;
+            }
+        }
     }
 
     holder {
-        max-width: 450px;
-        max-height: 730px;
+        max-width: 480px;
+        max-height: 790px;
         opacity: 0.5;
         transition: all 0.6s cubic-bezier(0.28, 0.11, 0.32, 1);
-    }
-
-    .eyebrow {
-        height: 100%;
-        justify-content: center;
-        width: 450px;
-        gap: 20px;
-
-        img {
-            width: 260px;
-        }
-
-        p {
-            width: 190px;
-        }
     }
 
     .current {
@@ -349,7 +344,7 @@ nav {
     }
 
     .iPhone {
-        max-width: 800px;
+        max-width: 840px;
     }
 
     .row {
@@ -373,13 +368,12 @@ nav {
     align-self: center;
     justify-self: center;
     z-index: 3;
-    margin-bottom: 160px;
-    gap: 370px;
+    gap: 400px;
 
     .left, .right {
         display: flex;
         width: 100%;
-        height: 600px;
+        height: 700px;
         opacity: 0.5;
         cursor: pointer;
         padding: 30px;
@@ -436,7 +430,7 @@ nav {
     padding-bottom: 0;
 
     img {
-        width: 1760px;
+        width: 1845px;
     }
 }
 
@@ -461,7 +455,11 @@ nav {
     }
 
     img {
-        width: 1180px;
+        width: 1420px;
+    }
+
+    .imac {
+        width: 1280px;
     }
 
     .short {
@@ -494,13 +492,14 @@ nav {
     background: white;
 
     .vis-1, .vis-2 {
-        aspect-ratio: 2600/1500;
         height: 1000px;
+        width: 100%;
         max-width: 1800px;
-    }    
-
-    .vis-2 {
-        aspect-ratio: 2900/1800;
+        background-image: url("Im/shelf/vision-1.webp");
+    } 
+    
+    .vis-2{
+        background-image: url("Im/shelf/vision-2.webp");
     }
 }
 
@@ -657,7 +656,7 @@ nav {
     background: #F5F7F9;
 
     img {
-        width: 1200px;
+        width: 1280px;
     }
 
     .row {
@@ -690,36 +689,36 @@ nav {
         align-items: center;
         gap: 10px;
 
+        .color {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing:content-box;
+            border-radius: 100px;
+            min-width: 38px;
+            min-height: 38px;
+            margin: 3px;
+    
+            .paint {
+                border-radius: 100px;
+                min-width: 32px;
+                min-height: 32px;
+                box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.15);
+            }
+    
+            .slate { background: linear-gradient(to bottom, #7389B4 0%, #7389B4 50%, #BDD1F0 50%, #BDD1F0 100%); }
+            .blue { background: linear-gradient(to bottom, #56ADD3 0%, #56ADD3 50%, #D9CEC6 50%, #D9CEC6 100%); }
+            .pink { background: linear-gradient(to bottom, #F66386 0%, #F66386 50%, #FFC0B2 50%, #FFC0B2 100%); }
+            .purple { background: linear-gradient(to bottom, #9979C1 0%, #9979C1 50%, #E2B5F5 50%, #E2B5F5 100%); }
+            .green { background: linear-gradient(to bottom, #2D915B 0%, #2D915B 50%, #E1B984 50%, #E1B984 100%); }
+        }
+
         p {
             font-size: 12px;
             line-height: 16px;
             color: var(--primary);
             opacity: 0;
         }
-    }
-
-    .color {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-sizing:content-box;
-        border-radius: 100px;
-        min-width: 38px;
-        min-height: 38px;
-        margin: 3px;
-
-        .paint {
-            border-radius: 100px;
-            min-width: 32px;
-            min-height: 32px;
-            box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.15);
-        }
-
-        .slate { background: linear-gradient(to bottom, #7389B4 0%, #7389B4 50%, #BDD1F0 50%, #BDD1F0 100%); }
-        .blue { background: linear-gradient(to bottom, #56ADD3 0%, #56ADD3 50%, #D9CEC6 50%, #D9CEC6 100%); }
-        .pink { background: linear-gradient(to bottom, #F66386 0%, #F66386 50%, #FFC0B2 50%, #FFC0B2 100%); }
-        .purple { background: linear-gradient(to bottom, #9979C1 0%, #9979C1 50%, #E2B5F5 50%, #E2B5F5 100%); }
-        .green { background: linear-gradient(to bottom, #2D915B 0%, #2D915B 50%, #E1B984 50%, #E1B984 100%); }
     }
 
     .current {
@@ -736,7 +735,7 @@ nav {
 
     #family {
         aspect-ratio: 2562/1186;
-        width: 1380px;
+        width: 1420px;
         transition: background-image 0.5s ease-in-out;
     }
 }
