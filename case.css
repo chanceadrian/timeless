@@ -799,6 +799,7 @@ nav {
     }
 
     .text {
+        align-items: center;
         gap: var(--larger-gap);
     }
 
@@ -912,7 +913,7 @@ nav {
 
     @media (width <= 630px) {
         img {
-            width: 686px;
+            width: 651.7px;
         }
     
         .button-container {
@@ -924,16 +925,16 @@ nav {
         }
     
         .no-overflow {
-            width: 275.6px;
-            height: 429.8px;
+            width: 261.82px;
+            height: 408.31px;
             overflow: hidden;
             position: absolute;
-            top: 70.47px;
-            left: 205.2px;
+            top: 66.95px;
+            left: 194.85px;
         }
     
         .w-image {
-            max-width: 275.6px;
+            max-width: 261.82px;
         }
     }
 }
