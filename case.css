@@ -227,6 +227,24 @@ nav {
     }
 }
 
+@media only screen and (max-width: 700px) {
+    nav {
+        border-radius: 0;
+        width: 100vw;
+        justify-content: space-around;
+        position: fixed;
+        top: 0px;
+
+        a svg {
+            display: none;
+        }
+    
+        .selected svg {
+            display: initial;
+        }
+    }
+}
+
 .key {
     gap: var(--secondary-section-gap);
     padding-block: var(--secondary-block-padding);
