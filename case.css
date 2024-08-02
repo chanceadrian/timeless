@@ -1,8 +1,10 @@
-*, *::before, *::after {
+*, *::before, *::after, *:focus {
     box-sizing: border-box;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
 
     h1, h2, h3, h4, h5, h6, h7, p {
         margin: 0;
@@ -12,7 +14,9 @@
         font-weight: 600;
     }
 
-    a { text-decoration: none; }
+    a { 
+        text-decoration: none; 
+    }
     svg { fill: inherit; }
     
     button {
