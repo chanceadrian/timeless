@@ -14,6 +14,10 @@
         font-weight: 600;
     }
 
+    h5, h6, h7, p {
+        font-weight: 600;
+    }
+
     a { 
         text-decoration: none; 
     }
@@ -31,9 +35,9 @@
 }
 
 :root {
-    --eyebrow-gap: 5px;
-    --text-gap: 20px;
-    --larger-gap: 30px;
+    --eyebrow-gap: 4px;
+    --text-gap: 24px;
+    --larger-gap: 32px;
     --vision-gap: 120px;
 
     --section-block-padding: 150px;
@@ -46,7 +50,7 @@
     --view-width: 980px;
     --small-width: 312px;
 
-    --keymark-text-width: 790px;
+    --keymark-text-width: 700px;
     --primary-text-width: 720px;
     --secondary-text-width: 620px;
     --tertiary-text-width: 330px;
@@ -66,13 +70,13 @@
     --h4-size: 36px;
     --h4-height: calc(var(--h4-size) + 4px);
     --h5-size: 32px;
-    --h5-height: calc(var(--h5-size) + 4px);
+    --h5-height: calc(var(--h5-size) + 8px);
     --h6-size: 24px;
-    --h6-height: calc(var(--h6-size) + 4px);
+    --h6-height: calc(var(--h6-size) + 8px);
     --h7-size: 21px;
-    --h7-height: calc(var(--h7-size) + 4px);
+    --h7-height: calc(var(--h7-size) + 8px);
     --p-size: 19px;
-    --p-height: calc(var(--p-size) + 4px);
+    --p-height: calc(var(--p-size) + 8px);
 }
 
 @media (width <= 1035px) {
@@ -279,7 +283,7 @@ nav {
         -webkit-text-fill-color: transparent;
     }
 
-    h6 {
+    h7 {
         max-width: var(--keymark-text-width);
     }
 
@@ -441,7 +445,7 @@ nav {
 
 .workflow {
 
-    .eyebrow, .text {
+    .eyebrow {
         align-items: center;
         text-align: center;
     }
@@ -662,13 +666,13 @@ nav {
 
     .mac {
         aspect-ratio: 2180/1282;
-        width: clamp(1280px, 83vw, 1420px);
+        width: clamp(1280px, 83vw, 1480px);
         background-image: url("Im/shelf/mac-1.webp");
     }
 
     .imac {
         aspect-ratio: 2380/1831;
-        min-width: clamp(1166px, 76vw, 1280px);
+        min-width: clamp(1166px, 77vw, 1380px);
         background-image: url("Im/shelf/mac-2.webp");
     }
 
@@ -724,6 +728,7 @@ nav {
         background-clip: text;
         -webkit-text-fill-color: transparent;
         max-width: var(--keymark-text-width);
+        font-weight: 600;
     }
 
     .sm {
@@ -858,7 +863,7 @@ nav {
     background: white;
 
     img {
-        width: clamp(1680px, 107vw, 1800px);
+        width: clamp(1780px, 117vw, 2080px);
         margin-bottom: -90px;
     }
 
@@ -1047,7 +1052,8 @@ nav {
 
     @media (width <= 630px) {
         img {
-            width: 95vw;
+            width: 136vw;
+            margin-left: 38vw;
         }
 
         .row {
@@ -1140,8 +1146,8 @@ nav {
 
     @media (width <= 630px) {
         #family { 
-            width: 130vw; 
-            margin-left: 34vw;
+            width: 143vw; 
+            margin-left: 50vw;
         }
 
         .row {
