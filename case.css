@@ -98,6 +98,8 @@
         --h5-size: 28px;
 
         --view-width: 312px;
+
+        --secondary-block-padding: 100px;
     }
 }
 
@@ -256,6 +258,7 @@ nav {
 .key {
     gap: var(--secondary-section-gap);
     padding-block: var(--secondary-block-padding);
+    padding-bottom: var(--section-block-padding);
     text-align: center;
 
     .text {
@@ -1052,8 +1055,8 @@ nav {
 
     @media (width <= 630px) {
         img {
-            width: 136vw;
-            margin-left: 38vw;
+            width: 144vw;
+            margin-left: 52vw;
         }
 
         .row {
