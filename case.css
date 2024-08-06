@@ -866,9 +866,11 @@ nav {
 .style {
     background: white;
 
-    img {
+    .style-watches {
+        aspect-ratio: 1648/570;
         width: clamp(1780px, 117vw, 2080px);
         margin-bottom: -90px;
+        background-image: url("Im/shelf/style-1.webp");
     }
 
     .eyebrow, .text {
@@ -881,7 +883,7 @@ nav {
     }
 
     @media (width <= 1035px) {
-        img {
+        .style-watches {
             width: 1180px;
             margin-bottom: -40px;
         }
@@ -892,9 +894,11 @@ nav {
     }
 
     @media (width <= 630px) {
-        img {
-            width: 910px;
-            margin-bottom: -30px;
+        .style-watches {
+            aspect-ratio: 562/1599;
+            width: clamp(360px, 91.6vw, 393px);
+            margin-bottom: 0;
+            background-image: url("Im/shelf/style-1-sm.webp");
         }
 
         h6 {
