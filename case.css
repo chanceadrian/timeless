@@ -498,24 +498,29 @@ nav {
 
     @media (width <= 630px) {
         .flow {
-            margin-inline: -3px;
+            margin-inline: 0;
 
             .eyebrow {
                 width: 320px;
             }
     
             holder {
-                max-width: 320px;
-                max-height: 580px;
+                max-width: clamp(393px, 100vw, 430px);
+                max-height: 157vw;
             }
     
             .iPhone {
-                max-width: 620px;
+                max-width: 167.5vw;
             }
         }
 
         .view {
-            width: 312px;
+            width: 100vw;
+
+            p {
+                width: 312px;
+                align-self: center;
+            }
         }
 
         .row {
@@ -528,11 +533,14 @@ nav {
         }
 
         .button-container {
-            gap: 270px;
-    
+            width: clamp(350px, 100vw, 450px);
+            justify-content: space-between;
+            gap: 0;
+
             .left, .right {
-                padding: 20px;
-                height: 560px;
+                width: fit-content;
+                height: 140vw;
+                padding: clamp(19px, 5vw, 22px);
             }
         }
     }
