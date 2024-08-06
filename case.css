@@ -896,9 +896,9 @@ nav {
 
     @media (width <= 630px) {
         .style-watches {
-            aspect-ratio: 562/1599;
-            width: clamp(360px, 91.6vw, 393px);
-            margin-bottom: 0;
+            aspect-ratio: 858/1036;
+            width: clamp(526px, 134vw, 578px);
+            margin-bottom: -6vw;
             background-image: url("Im/shelf/style-1-sm.webp");
         }
 
