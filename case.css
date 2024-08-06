@@ -98,7 +98,8 @@
 
         --view-width: 312px;
 
-        --secondary-block-padding: 100px;
+        --section-block-padding: 90px;
+        --secondary-block-padding: 90px;
     }
 }
 
