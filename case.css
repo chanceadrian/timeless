@@ -689,11 +689,11 @@ nav {
         gap: 80px;
     }
 
-    @media (width <= 1360px) {
+    @media (width <= 1035px) {
         .mac {
-            aspect-ratio: 2580/1282;
-            width: 1336px;
+            width: 120vw;
             background-image: url("Im/shelf/mac-1-med.webp");
+            margin-right: 20vw;
         }
 
         .imac {
@@ -711,7 +711,8 @@ nav {
 
     @media (width <= 630px) {
         .mac {
-            width: 700px;
+            width: 172vw;
+            margin-right: 44vw;
         }
 
         .row {
