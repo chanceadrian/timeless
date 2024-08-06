@@ -30,12 +30,9 @@ class Slideshow {
             holder.classList.toggle('current', idx === this.index);
         });
 
-        this.updateArrowOpacity();
-    }
-
-    updateArrowOpacity() {
-        this.leftArrow.style.opacity = (this.index === 0) ? 0.3 : 1;
-        this.rightArrow.style.opacity = (this.index === this.totalSlides - 1) ? 0.3 : 1;
+        setTimeout(() => {
+            this.updateArrowOpacity();
+        }, 100);
     }
 
     nextSlide() {
@@ -56,6 +53,11 @@ class Slideshow {
                 svg.style.fill = ''; 
             }, 100); 
         }
+    }
+
+    updateArrowOpacity() {
+        this.leftArrow.style.opacity = (this.index === 0) ? 0.3 : 1;
+        this.rightArrow.style.opacity = (this.index === this.totalSlides - 1) ? 0.3 : 1;
     }
 }
 
@@ -95,7 +97,6 @@ class BackgroundSlideshow {
     init() {
         this.updateBackground();
         this.updateText();
-        this.updateArrowOpacity();
 
         this.leftArrow.addEventListener('click', () => {
             this.prevSlide();
@@ -123,23 +124,22 @@ class BackgroundSlideshow {
         }
     }
 
-    updateArrowOpacity() {
-        this.leftArrow.style.opacity = (this.index === 0) ? 0.3 : 1;
-        this.rightArrow.style.opacity = (this.index === this.totalSlides - 1) ? 0.3 : 1;
-    }
-
     nextSlide() {
         this.index = (this.index < this.totalSlides - 1) ? this.index + 1 : 0;
         this.updateBackground();
         this.updateText();
-        this.updateArrowOpacity();
+        setTimeout(() => {
+            this.updateArrowOpacity();
+        }, 100);
     }
 
     prevSlide() {
         this.index = (this.index > 0) ? this.index - 1 : this.totalSlides - 1;
         this.updateBackground();
         this.updateText();
-        this.updateArrowOpacity();
+        setTimeout(() => {
+            this.updateArrowOpacity();
+        }, 100);
     }
 
     changeSvgFill(button) {
@@ -150,6 +150,11 @@ class BackgroundSlideshow {
                 svg.style.fill = '';
             }, 100); 
         }
+    }
+
+    updateArrowOpacity() {
+        this.leftArrow.style.opacity = (this.index === 0) ? 0.3 : 1;
+        this.rightArrow.style.opacity = (this.index === this.totalSlides - 1) ? 0.3 : 1;
     }
 }
 
