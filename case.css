@@ -3,7 +3,6 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    -webkit-tap-highlight-color: transparent;
 
     h1, h2, h3, h4, h5, h6, h7, p {
         margin: 0;
@@ -30,6 +29,7 @@
         justify-content: center;
         align-items: center;
         background: none;
+        -webkit-tap-highlight-color: transparent;
     }
 }
 
