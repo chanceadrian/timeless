@@ -435,16 +435,6 @@ nav {
     }
 }
 
-@media (width <= 630px) {
-    .button-container {
-        gap: 240px;
-
-        .left, .right {
-            height: 500px;
-        }
-    }
-}
-
 .workflow {
 
     .eyebrow {
@@ -511,7 +501,7 @@ nav {
 
     @media (width <= 630px) {
         .flow {
-            margin-inline: -5px;
+            margin-inline: -3px;
 
             .eyebrow {
                 width: 320px;
@@ -538,6 +528,15 @@ nav {
 
         br {
             display: none;
+        }
+
+        .button-container {
+            gap: 270px;
+    
+            .left, .right {
+                padding: 20px;
+                height: 560px;
+            }
         }
     }
 }
@@ -588,19 +587,23 @@ nav {
 
     @media (width <= 630px) {
         #cabinet {
-            width: 580px;
+            width: clamp(660px, 168vw, 722.4px);
         }
 
         .button-container {
-            gap: 240px;
+            width: clamp(350px, 100vw, 450px);
+            justify-content: space-between;
+            gap: 0;
 
             .left, .right {
-                height: 360px;
+                width: fit-content;
+                height: clamp(408px, 104vw, 448px);
+                padding: clamp(19px, 5vw, 22px);
             }
         }
 
         holder {
-            max-height: 400px;
+            max-height: clamp(448px, 114vw, 490px);
         }
     }
 }
@@ -857,7 +860,7 @@ nav {
         }
 
         img {
-            min-width: 270px;
+            min-width: 220px;
         }
     }
 }
@@ -945,28 +948,32 @@ nav {
 
     @media (width <= 630px) {
         img {
-            width: 651.7px;
+            width: clamp(651.7px, 165.826vw, 713.05px);
         }
-    
+
         .button-container {
-            gap: 300px;
+            width: clamp(350px, 100vw, 450px);
+            justify-content: space-between;
+            gap: 0;
 
             .left, .right {
-                padding: 12px;
+                width: fit-content;
+                height: clamp(459.81px, 117vw, 503.09px);
+                padding: clamp(19px, 5vw, 22px);
             }
         }
     
         .no-overflow {
-            width: 261.82px;
-            height: 408.31px;
+            width: clamp(261.82px, 66.62vw, 286.46px);
+            height: clamp(408.31px, 103.89vw, 446.73px);
             overflow: hidden;
             position: absolute;
-            top: 66.95px;
-            left: 194.85px;
+            top: clamp(66.95px, 17.035vw, 73.25px);
+            left: clamp(194.85px, 49.58vw, 213.194px);
         }
     
         .w-image {
-            max-width: 261.82px;
+            max-width: clamp(261.82px, 66.62vw, 286.46px);
         }
     }
 }
@@ -1019,7 +1026,7 @@ nav {
 
     @media (width <= 630px) {
         #stand {
-            width: 360px;
+            width: clamp(360px, 91.6vw, 393px);
         }
 
         .button-container {
