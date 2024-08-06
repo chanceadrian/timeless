@@ -426,10 +426,6 @@ nav {
         fill: var(--secondary);
     }
     
-    .left:active > svg, .right:active > svg{
-        fill: var(--primary) !important;
-    }
-    
     .left {
         opacity: 0.3;
     }

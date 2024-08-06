@@ -12,8 +12,14 @@ class Slideshow {
 
     init() {
         this.setIndex();
-        this.leftArrow.addEventListener('click', () => this.prevSlide());
-        this.rightArrow.addEventListener('click', () => this.nextSlide());
+        this.leftArrow.addEventListener('click', () => {
+            this.prevSlide();
+            this.changeSvgFill(this.leftArrow);
+        });
+        this.rightArrow.addEventListener('click', () => {
+            this.nextSlide();
+            this.changeSvgFill(this.rightArrow);
+        });
     }
 
     setIndex() {
@@ -40,6 +46,16 @@ class Slideshow {
     prevSlide() {
         this.index = (this.index > 0) ? this.index - 1 : this.totalSlides - 1;
         this.setIndex();
+    }
+
+    changeSvgFill(button) {
+        const svg = button.querySelector('svg');
+        if (svg) {
+            svg.style.fill = '#1D1E1F';
+            setTimeout(() => {
+                svg.style.fill = ''; 
+            }, 100); 
+        }
     }
 }
 
@@ -80,8 +96,15 @@ class BackgroundSlideshow {
         this.updateBackground();
         this.updateText();
         this.updateArrowOpacity();
-        this.leftArrow.addEventListener('click', () => this.prevSlide());
-        this.rightArrow.addEventListener('click', () => this.nextSlide());
+
+        this.leftArrow.addEventListener('click', () => {
+            this.prevSlide();
+            this.changeSvgFill(this.leftArrow);
+        });
+        this.rightArrow.addEventListener('click', () => {
+            this.nextSlide();
+            this.changeSvgFill(this.rightArrow);
+        });
     }
 
     updateBackground() {
@@ -117,6 +140,16 @@ class BackgroundSlideshow {
         this.updateBackground();
         this.updateText();
         this.updateArrowOpacity();
+    }
+
+    changeSvgFill(button) {
+        const svg = button.querySelector('svg');
+        if (svg) {
+            svg.style.fill = '#1D1E1F';
+            setTimeout(() => {
+                svg.style.fill = '';
+            }, 100); 
+        }
     }
 }
 
