@@ -506,6 +506,7 @@ nav {
     
             holder {
                 max-width: clamp(393px, 100vw, 430px);
+                min-width: clamp(393px, 100vw, 430px);
                 max-height: 157vw;
             }
     
