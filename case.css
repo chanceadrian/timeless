@@ -627,7 +627,7 @@ nav {
     @media (width <= 630px) {
         .iPad-1 {
             aspect-ratio: 1705/2135;
-            width: 600px;
+            width: 630px;
             background-image: url("Im/shelf/iPad-1-sm.webp");
         }
     }
